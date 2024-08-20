@@ -24,3 +24,6 @@ esto dice que el get en donde se huzo esta prueba ser adesde el lado del servido
 si por ejem paso a server el output pero tengo una pagina que nnunca cambiara le aplico 
 
 export const prerender = true; aun asi etando en server y esta pagina sera estatica 
+
+
+npx astro add cloudflare
