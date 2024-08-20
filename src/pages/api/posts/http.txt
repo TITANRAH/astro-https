@@ -1,0 +1,5 @@
+podriamos dejar el index para los post creacion etc 
+
+y el [slug].ts para putdelete etc o lo que neceiste que venga param
+
+en esta parte tenemos acceso a las cookies export const GET: APIRoute = async ({ params, request, cookies }) => {

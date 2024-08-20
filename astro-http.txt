@@ -1,0 +1,26 @@
+ npx astro add node
+
+ para añadir node server side 
+
+ en este archivo astro.config.mjs defino si trabajara desde el lado del servidor, hibrido o estatico 
+
+ export default defineConfig({
+  site: 'https://example.com',
+  integrations: [mdx(), sitemap()],
+  output: "server",
+  adapter: node({
+    mode: "standalone"
+  })
+});
+
+
+si uso hibrigod debo definir en las rutas si sera prerender en true (static) o false (server)
+
+export const prerender = false 
+
+esto dice que el get en donde se huzo esta prueba ser adesde el lado del servidor 
+
+
+si por ejem paso a server el output pero tengo una pagina que nnunca cambiara le aplico 
+
+export const prerender = true; aun asi etando en server y esta pagina sera estatica 
